@@ -1,0 +1,112 @@
+.photo-2{
+    /* Photo 2 */
+
+
+    position: absolute;
+    width: 270px;
+    height: 540px;
+    left: 150px;
+    top: 480px;
+
+background: url(../photo/Photo2.png);
+border-radius: 20px;
+}
+
+.photo-1{
+    /* Photo 1 */
+
+
+position: absolute;
+width: 270px;
+height: 270px;
+left: 440px;
+top: 480px;
+
+background: url(../photo/Photo1.png);
+border-radius: 20px;
+}
+
+.photo-3{
+    /* Photo 3 */
+
+
+position: absolute;
+width: 540px;
+height: 270px;
+left: 730px;
+top: 480px;
+
+background: url(../photo/Photo3.png);
+border-radius: 20px;
+
+}
+
+.photo-7{
+    /* Photo 7 */
+
+
+position: absolute;
+width: 270px;
+height: 270px;
+left: 150px;
+top: 1050px;
+
+background: url(../photo/Photo7.png);
+border-radius: 20px;
+}
+
+.photo-4{
+    /* Photo 4 */
+
+
+position: absolute;
+width: 270px;
+height: 540px;
+left: 440px;
+top: 780px;
+
+background: url(../photo/Photo4.png);
+border-radius: 20px;
+}
+
+.photo-6{
+    /* Photo 6 */
+
+
+position: absolute;
+width: 270px;
+height: 540px;
+left: 730px;
+top: 780px;
+
+background: url(../photo/Photo6.png);
+border-radius: 20px;
+}
+
+.photo-5{
+    /* Photo 5 */
+
+
+position: absolute;
+width: 270px;
+height: 540px;
+left: 1020px;
+top: 780px;
+
+background: url(../photo/Photo5.png);
+border-radius: 20px;
+}
+
+.photo-8{
+    /* Photo 7 */
+
+
+position: absolute;
+width: 1140px;
+height: 270px;
+left: 150px;
+top: 1350px;
+
+background: url(../photo/Photo8.png);
+border-radius: 20px;
+}

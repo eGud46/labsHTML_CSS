@@ -1,0 +1,1240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header{
+    position: fixed;
+    width: 1440px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    z-index: 2050;
+    background: #EAEAEA;
+}
+
+body{
+    /* Background */
+
+
+    position: absolute;
+    width: 1440px;
+    height: 2160px;
+    left: 0px;
+    top: 0px;
+
+    background: #252A34;
+}
+
+.oval{
+    /* красивый кружочек */
+
+
+    position: absolute;
+    width: 1440px;
+    height: 2160px;
+    left: 0px;
+    top: 0px;
+    -webkit-border-radius: 720px / 1080px;
+    -moz-border-radius: 720px / 1080px;
+    border-radius: 720px / 1080px;
+
+
+    background: linear-gradient(180deg, #08D9D6 0%, #FF2E63 100%);
+}
+
+.back{
+    /* Back */
+
+
+    position: absolute;
+    width: 1180px;
+    height: 1580px;
+    left: 130px;
+    top: 450px;
+
+    background: #EAEAEA;
+}
+
+.mainphoto{
+    /* Main Photo */
+
+
+    position: absolute;
+    width: 1180px;
+    height: 250px;
+    left: 130px;
+    top: 160px;
+
+    background: #EAEAEA;
+    border-radius: 50px 50px 0px 0px;
+}
+/*----------Seacrh-------------------*/
+* {box-sizing: border-box;}
+form {
+
+    float: right;
+    margin-right: 30px;
+    position: absolute;
+    width: 1180px;
+    left: 130px;
+    top: 410px;
+}
+input {
+    width: 1180px;
+    height: 40px;
+    padding-left: 15px;
+    border: 2px solid #324b4e;
+    background: #F9F6F6;
+    outline: none;
+    position: relative;
+    transition: .3s linear;
+}
+input:focus {
+    width: 1180px;
+}
+.searchbutton {
+    width: 42px;
+    height: 42px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: -2px;
+    right: 0;
+}
+.searchbutton:before{
+    content: "\f002";
+    font-family: FontAwesome;
+    color: #252A34;
+}
+/*-----------------------------------*/
+.textartzone{
+    /* APTZOHA */
+
+
+    position: absolute;
+    width: 1180px;
+    height: 250px;
+    left: 215px;
+    top: 160px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 128px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+
+    /* 1 */
+
+    background: linear-gradient(180deg, #F93266 0%, #08D9D6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.beautytext{
+    /* Тут тдолжна быть красивая фраза */
+
+
+    position: absolute;
+    width: 1180px;
+    height: 20px;
+    left: 315px;
+    top: 370px;
+
+    font-family: '?????';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+
+    color: #252A34;
+}
+
+.menubutton{
+    /* Меню кнопка */
+
+
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    left: 665px;
+    top: -15px;
+    border-radius: 100%;
+
+
+    background: #252A34;
+    display: inline-block;
+    color: #EAEAEA;
+    padding: 26px;
+    text-decoration: none;
+    font-family: '?????';
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 100;
+}
+
+.loginbutton-header{
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    left: 1250px;
+    top: 20px;
+
+    background: #252A34;
+    border-radius: 100px;
+
+
+    display: inline-block;
+    text-align: center;
+    color: #EAEAEA;
+    padding: 0px;
+    text-decoration: none;
+    font-family: '?????';
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.5em;
+    font-weight: 100;
+}
+
+.artzone-header{
+    /* APTZOHA */
+
+
+position: absolute;
+width: 400px;
+height: 80px;
+left: 30px;
+top: 0px;
+
+font-family: 'Cormorant';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 58px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.5em;
+text-transform: uppercase;
+
+background: linear-gradient(0deg, #252A34, #252A34), linear-gradient(207.98deg, #08D9D6 22.16%, #FF2E63 72.4%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+/*-----------------------------------------------------------------------------*/
+/* свойства модального окна по умолчанию */
+.modal-menu {
+    position: fixed; /* фиксированное положение */
+    top: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); /* цвет фона */
+    z-index: 1050;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal-menu:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog-menu {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog-menu {
+      max-width: 670px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content-menu {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content-menu {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #EAEAEA;
+}
+.modal-title-menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close-menu {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #252A34;
+    text-shadow: 0 1px 0 #EAEAEA;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close-menu:focus, .close-menu:hover {
+    color: #252A34;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body-menu {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+/*-------------------------------------------------------------------------------*/
+
+.button-in-menu{
+    background: #252A34;
+    display: inline-block;
+    color: #EAEAEA;
+    padding: 26px;
+    text-decoration: none;
+    font-family: '?????';
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 100;
+}
+
+.choisepage{
+    /* Rectangle 5 */
+
+
+position: absolute;
+width: 160px;
+height: 45px;
+left: 640px;
+top: 1960px;
+
+background: #252A34;
+border-radius: 50px;
+}
+
+.text-choisepage{
+    /* 1,2..100 */
+
+
+position: absolute;
+width: 84px;
+height: 41px;
+left: 678px;
+top: 1963px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+text-align: center;
+text-transform: uppercase;
+
+background: linear-gradient(180deg, #F93266 0%, #08D9D6 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.back-avatar{
+    /* Подложка */
+
+
+position: absolute;
+width: 730px;
+height: 260px;
+left: 353px;
+top: 190px;
+
+background: #EAEAEA;
+border-radius: 0px 50px 0px 0px;
+}
+
+.text-avatar-name{
+    /* name.123 */
+
+
+position: absolute;
+width: 517px;
+height: 63px;
+left: 580px;
+top: 190px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 48px;
+display: flex;
+align-items: center;
+
+color: #252A34;
+}
+
+.avatar{
+    position: absolute;
+width: 300px;
+height: 300px;
+left: 280px;
+top: 150px;
+
+background: url(../avatar.png);
+}
+
+.back-text-avatar{
+    /* Rectangle 9 */
+
+
+position: absolute;
+width: 464px;
+height: 110px;
+left: 596px;
+top: 325px;
+
+background: #252A34;
+border-radius: 20px;
+}
+
+.text-avatar{
+    /* Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an */
+
+
+position: absolute;
+width: 440px;
+height: 95px;
+left: 605px;
+top: 333px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #EAEAEA;
+}
+
+.subscribers{
+    /* Rectangle 7 */
+
+
+position: absolute;
+width: 180px;
+height: 60px;
+left: 628px;
+top: 253px;
+padding: 0px;
+
+background: #252A34;
+border-radius: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 60px;
+display: inline-block;
+align-items: center;
+text-align: center;
+letter-spacing: 0.25em;
+
+color: #EAEAEA;
+}
+
+.subscribe{
+    position: absolute;
+width: 180px;
+height: 60px;
+left: 880px;
+top: 253px;
+padding: 0px;
+
+background: #252A34;
+border-radius: 50px;
+
+background: #252A34;
+border-radius: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 60px;
+display: inline-block;
+align-items: center;
+text-align: center;
+letter-spacing: 0.25em;
+
+color: #EAEAEA;
+}
+
+.collection-btn{
+    /* КОЛЛЕКЦИИ */
+
+
+position: absolute;
+width: 1180px;
+height: 50px;
+left: 130px;
+top: 450px;
+
+background: #252A34;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 50px;
+display: inline-block;
+align-items: center;
+text-align: center;
+letter-spacing: 0.5em;
+text-transform: uppercase;
+
+color: #EAEAEA;
+}
+
+.sort-btn{
+    position: absolute;
+width: 90px;
+height: 90px;
+left: 107px;
+top: 425px;
+
+border-radius: 100%;
+background: #252A34;
+}
+
+.group-photo{
+    top: 50px;
+    left: 0px;
+}
+
+.nav-page{
+    position: absolute;
+width: 160px;
+height: 45px;
+left: 640px;
+top: 1960px;
+}
+
+.sub{
+    position: absolute;
+width: 194px;
+height: 60px;
+left: 150px;
+top: 0px;
+
+background: #252A34;
+border-radius: 50px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 60px;
+display: inline-block;
+align-items: center;
+text-align: center;
+letter-spacing: 0.25em;
+
+color: #EAEAEA;
+}
+
+.back-collection{
+    position: absolute;
+width: 1140px;
+height: 276px;
+left: 150px;
+top: 525px;
+border-radius: 20px;
+background: #252A34;
+}
+
+.photo-col-1{
+    position: absolute;
+width: 151px;
+height: 75px;
+left: 176px;
+top: 625px;
+
+background: url(../photo/Photo7.png);
+border-radius: 10px;
+}
+
+.photo-col-2{
+    position: absolute;
+width: 302px;
+height: 151px;
+left: 224px;
+top: 587px;
+
+background: url(../photo/Photo3.png);
+border-radius: 10px;
+}
+
+.photo-col-3{
+    position: absolute;
+width: 151px;
+height: 75px;
+left: 422px;
+top: 625px;
+
+background: url(../photo/Photo8.png);
+border-radius: 10px;
+}
+
+.btn-col{
+    position: absolute;
+width: 130px;
+height: 40px;
+right: 0px;
+top: 86%;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+display: inline-block;
+align-items: center;
+text-align: center;
+letter-spacing: 0.25em;
+
+color: #EAEAEA;
+line-height: 40px;
+
+background: #08D9D6;
+border-top-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+
+.btn-col:hover{
+    color:#EAEAEA
+    
+}
+
+.nav-col{
+    position: absolute;
+width: 53px;
+height: 26px;
+left: 1237px;
+top: 536px;
+
+font-family: 'Gentium Book Basic';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 26px;
+display: inline-block;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #EAEAEA;
+}
+
+.text-col-main{
+    position: absolute;
+width: 574px;
+height: 55px;
+left: 611px;
+top: 570px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 55px;
+display: inline-block;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #EAEAEA;
+}
+
+.text-col{
+    position: absolute;
+width: 576px;
+height: 130px;
+left: 609px;
+top: 635px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.1em;
+
+color: #EAEAEA;
+}
+
+/**MYMODAL***********************************************/
+/* свойства модального окна по умолчанию */
+.modal-2 {
+    position: fixed; /* фиксированное положение */
+    top: 75px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    z-index: 2055;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal-2:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog-2 {
+    position: relative;
+    width: 1140px;
+    margin: 10px;
+}
+@media (min-width: 1140px) {
+  .modal-dialog-2 {
+      max-width: 1140px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content-2 {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #252A34;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 1140px) {
+  .modal-content-2 {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #EAEAEA;
+}
+/* свойства для кнопки "Закрыть" */
+.closelight {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #EAEAEA;
+    text-shadow: 0 1px 0 #EAEAEA;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.closelight:focus, .close:hover {
+    color: #EAEAEA;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body-2 {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+    height: 600px;
+}
+
+/************************************************************/
+
+.photo-in-modal{
+    position: absolute;
+width: 270px;
+height: 540px;
+left: 40px;
+top: 30px;
+
+background: url(../photo/Photo2.png);
+border-radius: 20px;
+}
+
+.photo-in-modal-2{
+    position: absolute;
+    width: 270px;
+    height: 540px;
+    left: 40px;
+    top: 30px;
+    
+    background: url(../photo/Photo6.png);
+    border-radius: 20px;
+}
+
+.profile-in-modal{
+    position: absolute;
+width: 194px;
+height: 60px;
+left: 335px;
+top: 30px;
+
+background: #EAEAEA;
+border-radius: 50px;
+}
+
+.ava-in-modal{
+    position: absolute;
+width: 50px;
+height: 50px;
+left: 349.04px;
+top: 35px;
+border-radius: 100%;
+background: url(../avatar.png);
+background-position: center;
+background-size: 100%;
+}
+
+.name-in-modal{
+    position: absolute;
+width: 118.87px;
+height: 46px;
+left: 395.84px;
+top: 37px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 46px;
+display: inline-block;
+align-items: center;
+text-align: center;
+
+color: #252A34;
+}
+
+.back-in-modal{
+    position: absolute;
+width: 697px;
+height: 355px;
+left: 335px;
+top: 115px;
+
+background: #EAEAEA;
+border-radius: 50px;
+}
+
+.date-in-modal{
+    position: absolute;
+width: 91px;
+height: 42px;
+left: 1032px;
+top: 43px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 42px;
+display: inline-block;
+align-items: center;
+text-align: center;
+
+color: #EAEAEA;
+}
+
+.text-in-modal{
+    position: absolute;
+width: 667px;
+height: 327px;
+left: 353px;
+top: 126px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #252A34;
+}
+
+.music-in-modal{
+    position: absolute;
+width: 50px;
+height: 49px;
+left: 349px;
+top: 521px;
+}
+
+.text-music-in-modal{
+    position: absolute;
+width: 350px;
+height: 41px;
+left: 60px;
+top: 0px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 350;
+font-size: 20px;
+line-height: 41px;
+display: inline-block;
+align-items: center;
+letter-spacing: 00.25em;
+
+color: #EAEAEA;
+
+}
+
+.likes-in-modal{
+    
+position: absolute;
+width: 158px;
+height: 110px;
+left: 945px;
+top: 470px;
+}
+
+/**MYMODALCOLLECTION***********************************************/
+/* свойства модального окна по умолчанию */
+.modal-col {
+    position: fixed; /* фиксированное положение */
+    top: 75px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    z-index: 2055;
+    opacity: 0; /* по умолчанию модальное окно прозрачно */
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+/* при отображении модального окно */
+.modal-col:target {
+    opacity: 1; /* делаем окно видимым */
+	  pointer-events: auto; /* элемент видим для событий мыши */
+    overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog-col {
+    position: relative;
+    width: 1140px;
+    margin: 10px;
+}
+@media (min-width: 1140px) {
+  .modal-dialog-col {
+      max-width: 1140px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */ 
+.modal-content-col {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #EAEAEA;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 1140px) {
+  .modal-content-col {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header-col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title-col {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #252A34;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #252A34;
+    text-shadow: 0 1px 0 #252A34;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #252A34;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body-col {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+    height: 660px;
+}
+
+/************************************************************/
+
+.photo-in-colmodal-1{
+    position: absolute;
+width: 270px;
+height: 540px;
+left: 10px;
+top: 20px;
+
+background: url(../photo/Photo4.png);
+border-radius: 20px;
+}
+
+.photo-in-colmodal-2{
+    position: absolute;
+    width: 540px;
+    height: 270px;
+    left: 300px;
+    top: 20px;
+    
+    background: url(../photo/Photo8.png);
+    background-position: center;
+    border-radius: 20px;
+}
+
+.photo-in-colmodal-3{
+    position: absolute;
+width: 540px;
+height: 270px;
+left: 300px;
+top: 320px;
+
+background: url(../photo/Photo3.png);
+border-radius: 20px;
+}
+
+.photo-in-colmodal-4{
+    position: absolute;
+width: 270px;
+height: 540px;
+left: 860px;
+top: 20px;
+
+background: url(../photo/Photo6.png);
+border-radius: 20px;
+}
+
+.nav-page#collection{
+    position: absolute;
+width: 160px;
+height: 45px;
+left: 480px;
+top: 610px;
+}
+
+.back-2{
+    position: absolute;
+width: 1180px;
+height: 1900px;
+left: 130px;
+top: 130px;
+
+background: #EAEAEA;
+}
+
+.sub-1{
+    position: absolute;
+width: 1140px;
+height: 600px;
+left: 150px;
+top: 159px;
+}
+
+.sub-2{
+    
+position: absolute;
+width: 1140px;
+height: 600px;
+left: 150px;
+top: 780px;
+
+}
+
+.back-sub{
+    position: absolute;
+width: 1140px;
+height: 600px;
+left: 0px;
+top: 0px;
+
+background: #252A34;
+border-radius: 20px;
+}
+
+.text-for-music{
+    position: absolute;
+width: 275px;
+height: 41px;
+left: 417px;
+top: 525px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 41px;
+display: inline-block;
+align-items: center;
+
+color: #EAEAEA;
+}
+
+.icon-for-music{
+    position: absolute;
+width: 50px;
+height: 49px;
+left: 349px;
+top: 521px;
+}

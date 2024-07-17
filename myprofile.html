@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/photo.css" rel="stylesheet">
+    <title>Мой Профиль</title>
+</head>
+<body>
+    <!-- BODY -->
+    <div class="oval"></div>
+    <div class="back"></div>
+
+    <header>
+        <a class="menubutton" href="#openModal-menu">M</a>
+        <a class="loginbutton-header" href="auth.html">ВОЙТИ</a>
+        <div class="artzone-header">APTZOHA</div>
+    </header>
+
+    <div id="openModal-menu" class="modal-menu">
+        <div class="modal-dialog-menu">
+          <div class="modal-content-menu">
+            <div class="modal-header-menu">
+              <h3 class="modal-title-menu">Меню</h3>
+              <a href="#close-menu" title="Close" class="close-menu">×</a>
+            </div>
+            <div class="modal-body-menu">
+              <a class="button-in-menu" href="mysub.html">MySub</a>
+              <a class="button-in-menu" href="index.html">Search</a>
+              <a class="button-in-menu" href="myprofile.html">MyProfile</a>
+              <a class="button-in-menu" href="">MyEdit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="back-avatar"></div>
+    <div class="text-avatar-name">name.123</div>
+    <div class="avatar"></div>
+    <div class="back-text-avatar"></div>
+    <div class="text-avatar">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an</div>
+    
+    <form>
+<!-- Модальное окно -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Подписчики</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        .<a class="sub" href="">@name.123</a>
+      </div>
+      <div class="modal-footer">
+        <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Сохранить изменения</button>-->
+      </div>
+    </div>
+  </div>
+</div>
+    </form>
+    <form>
+      <!-- Модальное окно -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Подписки</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              .<a class="sub" href="">@name.321</a>
+            </div>
+            <div class="modal-footer">
+              <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+              <button type="button" class="btn btn-primary">Сохранить изменения</button>-->
+            </div>
+          </div>
+        </div>
+      </div>
+          </form>
+    <a class="subscribers" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">70 подписчиков</a>
+    <a class="subscribe" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">120 подписок</a>
+    
+    <a class="collection-btn" href="mycollection.html">коллекции</a>
+    <a class="sort-btn" href="">
+      <svg xmlns="http://www.w3.org/2000/svg" width="85" height="85" fill="#F93266" class="bi bi-hourglass" viewBox="0 0 16 16">
+        <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702c0 .7-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 13v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351v-.702c0-.7.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2h-7z"/>
+      </svg>
+    </a>
+
+    <!--MyMODAL------------------------------------------------>
+    <div id="photo2" class="modal-2">
+      <div class="modal-dialog-2">
+        <div class="modal-content-2">
+          <div class="modal-header-2">
+            <h3 class="modal-title-2">Окно фото</h3>
+            <a href="#close" title="Close" class="closelight">×</a>
+          </div>
+          <div class="modal-body-2">    
+            <div class="photo-in-modal"></div>
+            <div class="profile-in-modal"></div>
+            <span class="ava-in-modal"></span>
+            <a class="name-in-modal" href="myprofile.html">name.123</a>
+            <div class="back-in-modal"></div>
+            <div class="date-in-modal">30/10/22</div>
+            <div class="text-in-modal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, #teg #res #teg</div>
+            <form class="music-in-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#EAEAEA" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+              </svg>
+              <div class="text-music-in-modal">author-name - music name</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------->
+    <form class="group-photo">
+      <a class="photo-2" href="#photo2"></a>
+      <a class="photo-1" href=""></a>
+      <a class="photo-3" href=""></a>
+      <a class="photo-7" href=""></a>
+      <a class="photo-4" href=""></a>
+      <a class="photo-6" href=""></a>
+      <a class="photo-5" href=""></a>
+      <a class="photo-8" href=""></a>
+    </form>
+
+    <form class="nav-page">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </form>
+
+    <!-- BODY -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

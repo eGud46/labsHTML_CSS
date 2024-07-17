@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск</title>
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/right-nav-style.css">
+    <link rel="stylesheet" href="css/photo.css">
+
+  </head>
+<body>
+    <input type="checkbox" id="nav-toggle" hidden>
+    <div class="oval"></div>
+    <div class="back"></div>
+    <div class="mainphoto"></div>
+
+    <form>
+        <input type="text" placeholder="Искать здесь...">
+        <button class="searchbutton" type="submit"></button>
+    </form>
+
+    <div class="textartzone">APTZOHA</div>
+    <div class="beautytext">Фотографы всего мира объединяйтесь!</div>
+
+    <header>
+        <a class="menubutton" href="#openModal-menu">M</a>
+        <a class="loginbutton-header" href="auth.html">ВОЙТИ</a>
+        <div class="artzone-header">APTZOHA</div>
+    </header>
+
+    <div id="openModal-menu" class="modal-menu">
+        <div class="modal-dialog-menu">
+          <div class="modal-content-menu">
+            <div class="modal-header-menu">
+              <h3 class="modal-title-menu">Меню</h3>
+              <a href="#close-menu" title="Close" class="close-menu">×</a>
+            </div>
+            <div class="modal-body-menu">
+              <a class="button-in-menu" href="mysub.html">MySub</a>
+              <a class="button-in-menu" href="index.html">Search</a>
+              <a class="button-in-menu" href="myprofile.html">MyProfile</a>
+              <a class="button-in-menu" href="">MyEdit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <label for="nav-toggle" class="nav-toggle" onclick></label>
+        <div class="navtext-1">СОРТИРОВКА</div>
+        <select class="navselect-1">
+          <option value="likes">likes</option>
+          <option value="views">views</option>
+          <option value="date">date</option>
+        </select>
+        <div class="navtext-2">ТЕГИ</div>
+        <textarea class="textarea-1" rows="10" cols="45" name="tegs"></textarea>
+        <div class="navtext-3">Ориентация</div>
+        <select class="navselect-2">
+          <option value="any">любая</option>
+          <option value="1:1">1:1</option>
+          <option value="2:1">2:1</option>
+          <option value="1:2">1:2</option>
+          <option value="1:4">1:4</option>
+          <option value="4:1">4:1</option>
+        </select>
+        <div class="navtext-4">Дата размещения</div>
+        <select class="navselect-3">
+          <option value="all time">Всё время</option>
+          <option value="6 mounth">6 месяцев</option>
+          <option value="3 mounth">3 месяца</option>
+          <option value="1 mounth">месяц</option>
+          <option value="last week">Неделя</option>
+          <option value="last day">День</option>
+        </select>
+  </nav>
+
+    <!--MyMODAL------------------------------------------------>
+    <div id="photo2" class="modal-2">
+      <div class="modal-dialog-2">
+        <div class="modal-content-2">
+          <div class="modal-header-2">
+            <h3 class="modal-title-2">Окно фото</h3>
+            <a href="#close" title="Close" class="closelight">×</a>
+          </div>
+          <div class="modal-body-2">    
+            <div class="photo-in-modal"></div>
+            <div class="profile-in-modal"></div>
+            <span class="ava-in-modal"></span>
+            <a class="name-in-modal" href="myprofile.html">name.123</a>
+            <div class="back-in-modal"></div>
+            <div class="date-in-modal">30/10/22</div>
+            <div class="text-in-modal">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, #teg #res #teg</div>
+            <form class="music-in-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#EAEAEA" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+              </svg>
+              <div class="text-music-in-modal">author-name - music name</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------------------------------------------->
+
+<a class="photo-2" href="#photo2"></a>
+<a class="photo-1" href=""></a>
+<a class="photo-3" href=""></a>
+<a class="photo-7" href=""></a>
+<a class="photo-4" href=""></a>
+<a class="photo-6" href=""></a>
+<a class="photo-5" href=""></a>
+<a class="photo-8" href=""></a>
+
+<div class="choisepage"></div>
+<div class="text-choisepage">{1,2,3..10}</div>
+
+</body>
+</html>
